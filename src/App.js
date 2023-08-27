@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import CartPage from "./pages/CartPage";
+import Checkout from "./pages/Checkout";
+import ProductDetailsPage from "./pages/ProductDetailsPage";
 
 import {
   createBrowserRouter,
@@ -16,11 +18,11 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>,
+    element: <Home />,
   },
   {
     path: "/login",
-    element: <LoginPage></LoginPage>,
+    element: <LoginPage />,
   },
   {
     path: "/signup",
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
   {
     path: "/cart",
     element: <CartPage />,
+  },
+  {
+    path: "/checkout",
+    element: <Checkout />,
+  },
+  {
+    path: "/product-detail",
+    element: <ProductDetailsPage />,
   },
 ]);
 
